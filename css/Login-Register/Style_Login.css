@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a30625; 
+}
+
+/* Capsula principal ocupando toda la pantalla */
+.Capsula {
+  display: flex;
+  flex-direction: row-reverse; /* Imagen a la derecha */
+  border-radius: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Capsula del login ajustada a la izquierda */
+.Login_Cap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a30625;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Título principal */
+.Titulo_Principal h1 {
+  color: white;
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Estilo de las etiquetas */
+.info {
+  color: white;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Estilo de los inputs */
+.Correo, .Contraseña {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Botón de Login */
+.Login {
+  background-color: #515151;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Estilo del otro método de login */
+.Otro_Metodo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: white;
+}
+
+.Google {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* Botón de registro */
+.Registro {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Registro a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Registro a:hover {
+  text-decoration: underline;
+}
+
+/* Capsula de la imagen ajustada a la derecha */
+.Img_Caps {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a30625;
+}
+
+.Imagen_Ref {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

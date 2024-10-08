@@ -1,0 +1,247 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+/* Barra de navegación */
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.barra-navegacion .logo {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.barra-navegacion .ubicacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-navegacion .ubicacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.barra-navegacion .ubicacion a:hover {
+    color: #007bff;
+}
+
+.barra-navegacion .buscador {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Espacio a la izquierda de la barra de búsqueda */
+}
+
+.barra-navegacion input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+.barra-navegacion input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none; /* Quitar el contorno predeterminado */
+}
+
+.barra-navegacion button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.barra-navegacion button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.barra-navegacion .carrito img,
+.barra-navegacion .Perfil img {
+    width: 30px; /* Ajusta el tamaño de los íconos */
+    height: 30px; /* Ajusta el tamaño de los íconos */
+    margin-left: 15px;
+}
+
+/* Estilo adicional para el perfil */
+.barra-navegacion .Perfil {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+}
+
+/* Barra de filtros */
+.Barra_Filtros_Vertical {
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.titulo-filtros {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.filtro-opcion {
+    margin: 10px 0;
+}
+
+.filtro-opcion label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.filtro-opcion input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.rango-precio {
+    display: flex;
+    align-items: center;
+}
+
+.rango-precio input[type="range"] {
+    margin: 0 10px;
+}
+
+/* Estilos para los inputs de precio */
+.rango-precio input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.btn-aplicar-rango {
+    background-color: #28a745; /* Verde para el botón de aplicar */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-aplicar-rango:hover {
+    background-color: #218838; /* Color más oscuro al pasar el ratón */
+}
+/* Estilo para select */
+#filtroUbicacion {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+.filtro-opcion {
+    margin: 10px 0; /* Margen entre cada opción del filtro */
+}
+
+.Envio_Gratis_Boton {
+    background-color: #28a745; /* Color de fondo amarillo */
+    color: #000; /* Texto en negro */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    display: inline-block; /* Asegurar que el botón tenga un tamaño adecuado */
+    text-align: center; /* Centrar texto dentro del botón */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.Envio_Gratis_Boton:hover {
+    background-color: #28a745; /* Color más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+}
+
+.Envio_Gratis_Boton:active {
+    transform: translateY(0); /* Efecto de presionar el botón */
+}
+/*Productos_Monedas */
+.productoscontenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.Imagen_Moneda{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+/*Moneda_Carrito*/
+.Moneda_Carrito{
+    width: 120px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.Moneda_Carrito:hover{
+    background-color: #218838;
+}
